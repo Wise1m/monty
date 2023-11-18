@@ -3,7 +3,7 @@
 /**
  * _div - divides the second element by the top element of the stack
  *
- * @douly: head of the linked list
+ * @doubly: head of the linked list
  * @cline: line number
  * Return: no return
  */
@@ -48,7 +48,7 @@ void _mul(stack_t *doubly, unsigned int cline)
 	stack_t *aux = NULL;
 
 	aux = *doubly;
-	
+
 	for (; aux != NULL; aux aux->next, m++)
 		;
 	if (m < 2)
@@ -127,10 +127,10 @@ void _pchar(stack_t **doubly, unsigned int cline)
  * _pstr - prints the string of the stack
  * @doubly: head of the linked list
  * @cline: line number
- * 
+ *
  * Return: NULL
  */
-void _pstr(stack-t **doubly, unsigned int cline)
+void _pstr(stack_t **doubly, unsigned int cline)
 {
 	stack_t *aux;
 	(void)cline;

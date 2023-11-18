@@ -82,7 +82,7 @@ void _pstr(stack_t **doubly, unsigned int cline);
 void _rotl(stack_t **doubly, unsigned int cline);
 void _rotr(stack_t **doubly, unsigned int cline);
 
-/*get function*/
+/*get_func*/
 void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 
 /*imported functions*/

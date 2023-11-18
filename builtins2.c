@@ -69,11 +69,12 @@ void _nop(stack_t **doubly, unsigned int cline)
 }
 
 /**
- * @doublt: head of te linkd list
+ * _sub - subtracts top from the second element of the stack
+ * @doubly: head of te linkd list
  * @cline: line number
  * Retun  ; NULL
  */
-voidd _sub(stack_t **doubly, unsigned line)
+void _sub(stack_t **doubly, unsigned int cline)
 {
 	int m = 0;
 	stack_t *aux = NULL;
@@ -83,14 +84,14 @@ voidd _sub(stack_t **doubly, unsigned line)
 	for (; aux != NULL; aux = aux->next, m++)
 		;
 
-	if(m < 2)
+	if (m < 2)
 	{
 		dprintf(2, "L%u: can't sub, stackk too early\n", cline);
-		free_vgo_();
+		free_vgo();
 		exit(EXIT_FAILURE);
 	}
 
-	aux = (*doubly) ->next;
-	aux-> -=(^doubly)->n;
+	aux = (*doubly)->next;
+	aux->n -= (*doubly)->n;
 	_pop(doubly, cline);
 }

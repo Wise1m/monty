@@ -20,11 +20,11 @@ void free_dlistint(stack_t *head)
 /**
  * free_vglo - frees the global variables
  *
- * rReturn: no return
+ * Return: no return
  */
 void free_vglo(void)
 {
-        free_dlistint(vglo.head);
-        free(vglo.buffer);
-        fclose(vglo.fd);
+	free_dlistint(vglo.head);
+	free(vglo.buffer);
+	fclose(vglo.fd);
 }
