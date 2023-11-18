@@ -1,4 +1,8 @@
+#define _GNU_SOURCE
+#include <stdio.h>
 #include "monty.h"
+
+global_t vglo;
 
 /**
  * start_vglo - initializes the global variables
@@ -7,14 +11,14 @@
  * @fd: file descriptor
  * return: no return
  */
-void start_vglo(global_t *vglo, FILE *fd)
+void start_vglo(FILE *fd)
 {
-	vglo->lifo = 1;
-	vglo->cont = 1;
-	vglo->arg = NULL;
-	vglo->head = NULL;
-	vglo->fd = fd;
-	vglo->buffer = NULL;
+	vglo.lifo = 1;
+	vglo.cont = 1;
+	vglo.arg = NULL;
+	vglo.head = NULL;
+	vglo.fd = fd;
+	vglo.buffer = NULL;
 }
 
 /**

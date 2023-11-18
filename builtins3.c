@@ -1,3 +1,5 @@
+#define _GNU_SOURCE
+#include <stdio.h>
 #include "monty.h"
 
 /**
@@ -42,14 +44,14 @@ void _div(stack_t **doubly, unsigned int cline)
  * @cline: line number;
  * Return: no return
  */
-void _mul(stack_t *doubly, unsigned int cline)
+void _mul(stack_t **doubly, unsigned int cline)
 {
 	int m = 0;
 	stack_t *aux = NULL;
 
 	aux = *doubly;
 
-	for (; aux != NULL; aux aux->next, m++)
+	for (; aux != NULL; aux= aux->next, m++)
 		;
 	if (m < 2)
 	{

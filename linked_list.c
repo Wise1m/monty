@@ -1,4 +1,6 @@
-#include "monty.c"
+#define _GNU_SOURCE
+#include <stdio.h>
+#include "monty.h"
 
 /**
  * add_dnodeint_end - add a note at the end of the linked list

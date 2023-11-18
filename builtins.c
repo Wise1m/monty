@@ -1,3 +1,5 @@
+#define _GNU_SOURCE
+#include <stdio.h>
 #include "monty.h"
 
 /**
@@ -112,7 +114,7 @@ void _swap(stack_t **doubly, unsigned int cline)
 	stack_t *aux = NULL;
 
 	aux = *doubly;
-	for (; aux != NULL; aux = aux->next. m++)
+	for (; aux != NULL; aux = aux->next, m++)
 		;
 	if (m < 2)
 	{
@@ -126,5 +128,5 @@ void _swap(stack_t **doubly, unsigned int cline)
 	aux->next = (*doubly)->next;
 	aux->prev = *doubly;
 	(*doubly)->next = aux;
-	(*doubly)->prev = NULL
+	(*doubly)->prev = NULL;
 }

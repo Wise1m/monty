@@ -1,4 +1,6 @@
-#include "main.h"
+#define _GNU_SOURCE
+#include <stdio.h>
+#include "monty.h"
 
 /**
  * _queue - sets the format of the data to a queue (FIFO)
@@ -79,7 +81,7 @@ void _sub(stack_t **doubly, unsigned int cline)
 	int m = 0;
 	stack_t *aux = NULL;
 
-	aux, = *doubly;
+	aux = *doubly;
 
 	for (; aux != NULL; aux = aux->next, m++)
 		;
@@ -87,7 +89,7 @@ void _sub(stack_t **doubly, unsigned int cline)
 	if (m < 2)
 	{
 		dprintf(2, "L%u: can't sub, stackk too early\n", cline);
-		free_vgo();
+		free_vglo();
 		exit(EXIT_FAILURE);
 	}
 

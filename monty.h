@@ -1,5 +1,6 @@
 #ifndef _MONTY_H_
 #define _MONTY_H_
+#define _GNU_SOURCE
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -79,7 +80,7 @@ void _mul(stack_t **doubly, unsigned int cline);
 void _mod(stack_t **doubly, unsigned int cline);
 void _pchar(stack_t **doubly, unsigned int cline);
 void _pstr(stack_t **doubly, unsigned int cline);
-void _rotl(stack_t **doubly, unsigned int cline);
+void _rot1(stack_t **doubly, unsigned int cline);
 void _rotr(stack_t **doubly, unsigned int cline);
 
 /*get_func*/
@@ -100,4 +101,4 @@ void free_dlistint(stack_t *head);
 /* main */
 void free_vglo(void);
 
-#endif
+#endif /* MONTY_H */
